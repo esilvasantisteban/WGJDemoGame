@@ -11,11 +11,11 @@ public class KeyStrokeVisualizer : MonoBehaviour
         keys.ForEach(keyStrokeData =>
         {
             if (Input.GetKey(keyStrokeData.key)) {
-                keyStrokeData.spriteRenderer.sprite = keyStrokeData.heldSprite;
+                keyStrokeData.img.sprite = keyStrokeData.heldSprite;
             }
             else
             {
-                keyStrokeData.spriteRenderer.sprite = keyStrokeData.sprite;
+                keyStrokeData.img.sprite = keyStrokeData.sprite;
             }
         });
     }
@@ -24,7 +24,7 @@ public class KeyStrokeVisualizer : MonoBehaviour
 [System.Serializable]
 public class KeyStrokeVisualizerData
 {
-    public Image spriteRenderer;
+    public Image img;
     public Sprite sprite;
     public Sprite heldSprite;
     public string key;

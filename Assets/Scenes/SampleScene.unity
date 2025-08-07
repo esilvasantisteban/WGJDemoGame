@@ -1197,23 +1197,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keys:
-  - spriteRenderer: {fileID: 2087935994}
-    sprite: {fileID: 1455135642967840357, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
-    heldSprite: {fileID: -6383833780333300513, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
-    key: w
-  - spriteRenderer: {fileID: 2087766769}
+  - img: {fileID: 2087766769}
     sprite: {fileID: 6248234300754985299, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     heldSprite: {fileID: 3937091478173847554, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     key: s
-  - spriteRenderer: {fileID: 1426391468}
+  - img: {fileID: 2087766769}
     sprite: {fileID: -4367892179663000384, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     heldSprite: {fileID: 6818401694300646036, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     key: d
-  - spriteRenderer: {fileID: 1176499011}
+  - img: {fileID: 1176499011}
     sprite: {fileID: 362983496137431143, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     heldSprite: {fileID: 1614574626192249738, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     key: a
-  - spriteRenderer: {fileID: 535587983}
+  - img: {fileID: 2087935994}
+    sprite: {fileID: 1455135642967840357, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
+    heldSprite: {fileID: -6383833780333300513, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
+    key: w
+  - img: {fileID: 535587983}
     sprite: {fileID: -2902088354000148472, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     heldSprite: {fileID: 3840697073239822832, guid: 9c1261fe2f1469449a21457e5c3989dc, type: 3}
     key: space
