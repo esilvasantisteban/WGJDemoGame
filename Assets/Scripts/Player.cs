@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     public void FireProjectile ()
     {
         // Se crea un projectil en la posición del jugador
-        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        Instantiate(projectilePrefab, transform.position + Vector3.right * 0.6f + Vector3.up * Random.Range(-0.2f, 0.2f), Quaternion.identity);
 
         // Play fire sound
         audioSource.Play();
