@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,7 +9,7 @@ public class Player : MonoBehaviour
     public float Cooldown;
     public float currentCooldown;
     public GameObject projectilePrefab;
-    public AudioSource audioSource;
+    public EventReference fireSound;
 
     void Update()
     {
@@ -29,13 +30,13 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKey("w"))
             {
-                // Movemos al jugador hacia arriba en función de su velocidad
+                // Movemos al jugador hacia arriba en funciï¿½n de su velocidad
                 transform.position = transform.position + Vector3.up * speed * Time.deltaTime;
             }
 
             if (Input.GetKey("s"))
             {
-                // Movemos al jugador hacia abajo en función de su velocidad
+                // Movemos al jugador hacia abajo en funciï¿½n de su velocidad
                 transform.position = transform.position - Vector3.up * speed * Time.deltaTime;
             }
         }
@@ -43,12 +44,10 @@ public class Player : MonoBehaviour
 
     public void FireProjectile ()
     {
-        // Se crea un projectil en la posición del jugador
+        // Se crea un projectil en la posiciï¿½n del jugador
         Instantiate(projectilePrefab, transform.position + Vector3.right * 0.6f + Vector3.up * Random.Range(-0.2f, 0.2f), Quaternion.identity);
 
         // Play fire sound
-        audioSource.Play();
-        audioSource.pitch = Random.Range(0.9f, 1.1f); // Random pitch
-        audioSource.volume = Random.Range(0.7f, 1.3f) * 0.35f; // Random volume
+        RuntimeManager.PlayOneShot(fireSound);
     }
 }
