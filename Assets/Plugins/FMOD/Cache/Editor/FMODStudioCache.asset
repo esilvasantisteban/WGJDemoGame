@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7918002593353447298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music Background
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music Background
+  Guid:
+    Data1: 47418647
+    Data2: 1240132074
+    Data3: -1601342582
+    Data4: 246780490
+  Banks:
+  - {fileID: -2110313356169026001}
+  - {fileID: -2542784558986933070}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 83611
+--- !u!114 &-2542784558986933070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 639062601271937859
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-2110313356169026001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +61,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639062576276430942
+  lastModified: 639062598795497218
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -33,15 +79,17 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 1476202072886164899}
   - {fileID: -2110313356169026001}
+  - {fileID: -2542784558986933070}
   EditorEvents:
-  - {fileID: 2213930769007287953}
-  - {fileID: 3305662633817851271}
+  - {fileID: 8746497858697418910}
+  - {fileID: -7918002593353447298}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2110313356169026001}
+  - {fileID: -2542784558986933070}
   StringsBanks:
   - {fileID: 1476202072886164899}
-  cacheTime: 639062576308901715
+  cacheTime: 639062601271947829
   cacheVersion: 131635
 --- !u!114 &1476202072886164899
 MonoBehaviour:
@@ -58,12 +106,12 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639062576308901715
+  lastModified: 639062598795506048
   FileSizes:
   - Name: 
-    Value: 802
+    Value: 812
   Exists: 1
---- !u!114 &2213930769007287953
+--- !u!114 &8746497858697418910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,9 +121,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/New Event
+  m_Name: event:/Snap
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/New Event
+  Path: event:/Snap
   Guid:
     Data1: -2089558782
     Data2: 1246593179
@@ -83,37 +131,11 @@ MonoBehaviour:
     Data4: 898831161
   Banks:
   - {fileID: -2110313356169026001}
+  - {fileID: -2542784558986933070}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &3305662633817851271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/New Event 2
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/New Event 2
-  Guid:
-    Data1: 47418647
-    Data2: 1240132074
-    Data3: -1601342582
-    Data4: 246780490
-  Banks:
-  - {fileID: -2110313356169026001}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Length: 201
