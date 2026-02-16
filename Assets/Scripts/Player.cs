@@ -39,6 +39,15 @@ public class Player : MonoBehaviour
                 // Movemos al jugador hacia abajo en funci�n de su velocidad
                 transform.position = transform.position - Vector3.up * speed * Time.deltaTime;
             }
+            if (Input.GetKey("d"))
+            {
+                transform.position += Vector3.right * speed * Time.deltaTime;
+            }
+
+            if (Input.GetKey("a"))
+            {
+                transform.position -= Vector3.right * speed * Time.deltaTime;
+            }
         }
     }
 
